@@ -25,7 +25,7 @@ function Home() {
                             <h1>Ovatus Transportes</h1>
                             <h2>Excelência e confiança em cada quilômetro!</h2>
                         </HeadlineCanvasTitle>
-                        <Canvas camera={{ position: [400, 0, 0], fov: 1 }}>
+                        <Canvas camera={{ position: [400, 0, 0], fov: 1 }} style={{ pointerEvents: 'none' }}>
                            
                             <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} autoRotate={true} autoRotateSpeed={6}  />
                             <Suspense fallback={null}>
