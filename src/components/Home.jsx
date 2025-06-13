@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import Logocanvas from "../../public/Logocanvas";
 
-import { FaInstagram, FaLinkedin, } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import corporate from "../assets/corporate.mp4"
 import logofull from "../assets/logofull.svg"
 import logobackground from "../assets/logobackground.svg"
@@ -26,7 +26,8 @@ function Home() {
                             <h2>Excelência e confiança em cada quilômetro!</h2>
                         </HeadlineCanvasTitle>
                         <Canvas camera={{ position: [400, 0, 0], fov: 1 }}>
-                            <OrbitControls enableZoom={false} autoRotate={true} autoRotateSpeed={6} />
+                           
+                            <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} autoRotate={true} autoRotateSpeed={6}  />
                             <Suspense fallback={null}>
                                 <Logocanvas />
                             </Suspense>
@@ -41,7 +42,7 @@ function Home() {
                 <CtaContent>
                     <div className="box">
                         <div className="borderLine"></div>
-                        <a href="https://wa.me/5531973639785?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20aquisi%C3%A7%C3%A3o%20do%20produto." target="_blank">
+                        <a href="https://wa.me/5516992228343?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20dos%20servi%C3%A7os." target="_blank">
                             <div className="childBox">SAIBA MAIS</div>
                         </a>
                     </div>
@@ -119,7 +120,7 @@ function Home() {
                     <p>Rodapé (footer) Políticas (Privacidade, Cookies se necessário)</p>
 
                     <Icons>
-                        <a href="https://www.instagram.com/design_factory7/" target="_blank"><FaInstagram /></a><a href="https://www.linkedin.com/in/frederico-fulg%C3%AAncio/" target="_blank"><FaLinkedin /></a>
+                        <a href="https://wa.me/5516992228343?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20dos%20servi%C3%A7os." target="_blank"><FaInstagram /></a><a href="https://wa.me/5516992228343?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20dos%20servi%C3%A7os." target="_blank"><FaLinkedin /></a>
                     </Icons>
                     <p>“© Ovatus Transportes – Todos os direitos reservados”</p>
 
