@@ -51,6 +51,7 @@ export const CanvasHeadline = styled.div`
 
     canvas { 
         height:100vh !important;
+        pointer-events: none;
     }
 
     
