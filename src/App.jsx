@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar";
+import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import { GlobalStyle } from './globalstyle';
 
@@ -11,7 +12,7 @@ function App() {
     <Router>
       <GlobalStyle />
       <Navbar />
-      {/* <Navigation /> */}
+      <Navigation /> 
       <Routes>
         <Route path='/' element={<Home />} />
         {/*<Route path='/about' />

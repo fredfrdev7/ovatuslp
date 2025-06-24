@@ -32,7 +32,7 @@ const Navbar = ({ hide }) => {
                     smooth={true}
                     exact="true"
                     offset={el.offset}
-                    onClick={() => setShow(true)}
+                    onClick={() => setShow(false)}
                     to={el.to}
                   >
                     {el.text}

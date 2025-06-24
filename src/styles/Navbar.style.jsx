@@ -143,11 +143,11 @@ export const NavLinks = styled(LinkScroll)`
 	height: 100%;
 	
 	&.active {
-		color: #bd1622;
+		color: #92c03e;
 		transition: all 0.3s ease;
 		@media screen and (min-width: 960px) {
-			border-bottom: 1px solid #bd1622;
-			border-image: linear-gradient(to left, #ffffff , #bd1622) 1;
+			border-bottom: 1px solid #92c03e;
+			border-image: linear-gradient(to left, #1a1a1a , #92c03e) 1;
 		}
 	}
 	&:hover {

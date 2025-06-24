@@ -10,7 +10,7 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/Logocanvas.glb')
   return (
     <group {...props} dispose={null}>
-      <group position={[0, 0.8, 0]} rotation={[Math.PI / 2, 0, 0]} scale={8.065}>
+      <group position={[0, 0.4, 0]} rotation={[Math.PI / 2, 0, 0]} scale={8.065}>
         <mesh geometry={nodes.Curve_1.geometry} material={materials['Material.001']} />
         <mesh geometry={nodes.Curve_2.geometry} material={materials['Material.002']} />
       </group>

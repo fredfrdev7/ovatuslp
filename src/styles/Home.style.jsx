@@ -11,16 +11,16 @@ from {
 
 `
 
+export const Glitch = keyframes`
+   
+    50% { opacity: 0; }
+   
+`;
+
 export const HomeContainer = styled.div`
     background: linear-gradient(90deg, #1a1a1a 35%, #1a1a1a 86.61%);
-    font-weight: 400;
     text-align: center;
     color: #f9f9f9;
-
-    p {
-       
-        font-weight: 400;
-    }
 `
 
 export const Headline = styled.div`
@@ -30,55 +30,92 @@ export const Headline = styled.div`
 
     video {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
     }
+
+    
 `
 
 export const CanvasHeadline = styled.div`
     position: absolute;
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     top: 0;
     display:flex;
     flex-direction:column;
     z-index: 6;
-    margin-bottom: 0rem;
-    background: linear-gradient(180deg, #1a1a1a 20%, rgba(255, 255, 255, 0) 56.61%);
+    background: linear-gradient(360deg, #1a1a1a 20%, rgba(255, 255, 255, 0) 96.61%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     canvas { 
-        height:100vh !important;
-    }
+        height: 100vh !important;
+    }  
 
-    
-     
 `
 
 export const HeadlineCanvasTitle = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 2rem;
+    transform: translate(0px, 36px);
+    padding: 0 1rem;
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
 
     h2 {
-        font-weight: 400;
+        font-weight: 300;
         font-size: 1.3rem;
     }
+
+    @media (max-width: 472px) and (min-width: 375px) {
+        h1 { 
+            font-size: 2rem;
+        }
+
+
+    }
+
+
 `
 
 export const HeadlineCanvasSubTitle = styled.div`
-    background: linear-gradient(360deg, #1a1a1a 70%, rgba(255, 255, 255, 0) 96.61%);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 0rem 2rem;
-    font-size: 1.2rem;
+    transform: translate(0px, -36px);
+    padding: 0 24rem;
 
     p {
-        margin-top:1rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.6rem;
+        
+    }
+
+    @media (max-width: 1280px) and (min-width: 1024px) {
+        padding:0 12rem;
+    }
+
+    @media (max-width: 1023px) and (min-width: 884px) {
+        padding: 0rem 10rem;
+    }
+
+    @media (max-width: 883px) and (min-width: 625px) {
+        padding: 0rem 3rem; 
+    }
+
+    @media (max-width: 624px) and (min-width: 473px) {
+        padding: 0rem 2rem;  
+    }
+
+    @media (max-width: 472px) and (min-width: 375px) {
+        padding: 0rem 2rem;
+        transform: translate(0px, 10px);
+
+
     }
 
 `
@@ -87,7 +124,6 @@ export const CtaContent = styled.div`
     display: flex;
     justify-content:center;
     align-items:center;
-    min-height: 20vh;
     background: #1a1a1a;
 
 
@@ -111,8 +147,11 @@ export const CtaContent = styled.div`
     width: 200px;
     height: 200px;
     background: conic-gradient(from 0deg, transparent 70%, #92c03e);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     animation: ${CtaAlert} 1.5s linear infinite ;
-    z-index: 1;
+    z-index: 9;
+    border-radius: 1rem;
 
 }
 
@@ -125,12 +164,16 @@ export const CtaContent = styled.div`
     background-clip: content-box, border-box;
     color: #fff;
     border-radius: 1rem;
-    z-index: 2;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
+
+@media (max-width: 472px) and (min-width: 375px) {
+        margin-top: 2rem;
+    }
     
 `
 
@@ -140,6 +183,7 @@ export const LineSection = styled.div`
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
+    
 `
 
 export const AboutSection = styled.div`
@@ -148,11 +192,12 @@ export const AboutSection = styled.div`
 `
 
 export const AboutUs = styled.div`
-    background: linear-gradient(180deg, #1a1a1a 35%, #3d3d3d 86.61%);
+    background: linear-gradient(180deg, #1a1a1a 45%, #3d3d3d 96.61%);
     color: #fff;
     overflow: hidden;
     position: relative;
     z-index: 1;
+    margin-top: 2rem;
 
    .aboutcontent{
     display: flex;
@@ -170,39 +215,179 @@ export const AboutUs = styled.div`
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    padding:2rem;
+    padding: 2rem 2rem 0rem 2rem;
     z-index: 2;
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        padding: 0 25rem;
+        font-weight: 300;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+
    }
 
     .logobackground {
         position: absolute;
         align-self: center;
         overflow: hidden;
-        width: 550px;
+        width: 800px;
         z-index: 1;
         object-position: cover; 
     }
 
+    .logobackground img {
+         animation: ${Glitch} 1.5s infinite ease-in-out;
+    }
+
     .aboutinfo img{
-        max-width: 280px;
+        max-width: 320px;
     }
     
     ul {
         z-index: 3;
     }
+
+    ul i {
+        font-size: 2rem;
+        color: #f9f9f9;
+        
+    }
     
 
     li {
-        margin-bottom: 1rem;
-        border-radius:0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
         list-style: none;
-        align-items: left;
-        background: linear-gradient(270deg, #1a1a1a 70%, rgba(255, 255, 255, 0) 96.61%);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: double 1px transparent;
+        border-radius: 0.6rem;
+        background-image: linear-gradient(-98deg, #1a1a1a 70%, #3d3d3d), linear-gradient(-198deg , #3d3d3d, #92c03e 98%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 6px 6px 6px 1px rgba(0, 0, 0, 0.4);
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        width: 33vw;
+        height: 56px;
+     
+    }
+
+    @media (max-width: 1280px) and (min-width: 1024px) {
+         .aboutinfo {
+
+        p {
+        padding: 0 17rem;
         
+        }
+
+        }
+    }
+
+    @media (max-width: 1023px) and (min-width: 884px) {
+         .aboutinfo {
+
+        p {
+        padding: 0 14rem;
+        
+        }
+
+        }
+
+        li {
+        width: 43vw; 
+    }
+
+
+    }
+
+    @media (max-width: 883px) and (min-width: 741px) {
+         .aboutinfo {
+
+        p {
+        padding: 0 9rem;
+        
+        }
+
+        }
+
+        li {
+        width: 53vw; 
+    }
+
+    }
+
+    @media (max-width: 740px) and (min-width: 565px) {
+         .aboutinfo {
+
+        p {
+        padding: 0 6rem;
+        
+        }
+
+        }
+
+          li {
+        width: 63vw; 
+    }
+    }
+
+    @media (max-width: 564px) and (min-width: 435px) {
+         .aboutinfo {
+
+        p {
+        padding: 0 0rem;
+        
+        }
+
+        }
+
+              li {
+        width: 79vw; 
+    }
+    }
+
+    @media (max-width: 434px) and (min-width: 375px) {
+         .aboutinfo {
+            h1 {
+       
+        font-size: 2rem;
+    }
+
+        p {
+        padding: 0 0rem;
+        
+        }
+
+        }
+
+                 li {
+        width: 83vw; 
+    }
+
+    .aboutinfo img{
+        max-width: 280px;
+    }
     }
 
 `
@@ -212,38 +397,120 @@ export const Services = styled.div`
     display:flex;
     gap: 1rem;
     flex-direction: column;
-    background: linear-gradient(180deg, #3d3d3d 5%, #3b6e3d 16.61%);
+    align-items: center;
+    justify-content:center;
+    background: linear-gradient(180deg, #3d3d3d 1% , #3b6e3d 6.61%);
     color: #fff;
     text-align: center;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
 
-    li {
-        
+
+    h1 {
+        margin-top: 1rem;
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+
+    .card {
+        display:flex;
         border-radius:1rem;
-        list-style: none;
-        align-items: left;
-        background: linear-gradient(180deg, #3d3d3d 60%, rgba(255, 255, 255, 0) 72.61%);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 0.6rem 1rem 2rem 1rem;
+        width: 80vw;
+        height: 300px;
+        
+    }
+
+    .card .cardtitle {
+        position:absolute;
+        background: linear-gradient(180deg, #3d3d3d 45%, rgba(0, 0, 0, 0.3) 96.61%);
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius:2rem 2rem 0rem 0rem;;
+        width: 80vw;
+       
+    }
+
+    .card img {
+        width: 80vw;
+        object-fit: cover;
+        border-radius:2rem;
+    }
+
+    p {
+        padding: 2rem 20rem;
+    }
+
+    @media (max-width: 1280px) and (min-width: 962px) {
+        p {
+        padding: 2rem 16rem;
+    }  
+    }
+
+    @media (max-width: 962px) and (min-width: 765px) {
+     
+
+        
+        p {
+        padding: 2rem 12rem;
+    }  
+    }
+
+    @media (max-width: 764px) and (min-width: 432px) {
+       
+        p {
+        padding: 2rem 6rem;
+    }
+
+    
+    }
+
+    @media (max-width: 431px) and (min-width: 375px) {
+       
+        p {
+        padding: 1rem;
+    }
+
+    
     }
 `
 
 export const ClientsCases = styled.div`
     display:flex;
+    background: linear-gradient(180deg, #3b6e3d 1% , #1a1a1a 7.61%);
     gap: 1rem;
     flex-direction: column;
+    justify-content:center;
+    align-items: center;
     background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 3rem 0rem 3rem 0rem;
 
-    p{
-        padding: 0 2rem;
+    img {
+        margin-top: 1rem;
+        max-width: 360px;
+        margin-bottom: 1rem;
     }
 
-    .clients {
+    img:nth-child(4) {
+        max-width: 280px;
+        animation: ${Glitch} 2s infinite ease-in-out;
+    }
+
+    p {
+        padding: 0 1rem;
+    }
+
+    i {
+      font-size: 2rem;  
+    }
+
+    /* .clients {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -253,6 +520,41 @@ export const ClientsCases = styled.div`
     .clients img {
         max-width: 90px;
         border-radius:20rem;
+    } */
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+    }    
+
+    .itemcontacts {
+        display: flex;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to left, #1a1a1a , #92c03e , #1a1a1a ) 1;
+	    border-left: 0;
+	    border-right: 0;
+	    border-top: 0;
+        margin-top: 1rem;
+
+
+        i {
+            font-size: 1.6rem;
+            color:#92c03e;
+        }
+    }
+
+    @media (max-width: 431px) and (min-width: 375px) {
+       
+        img {
+        
+        max-width: 280px;
+    
+    }
+
+    
     }
    
 `
@@ -292,6 +594,11 @@ export const Footer = styled.div`
     flex-direction:column;
     align-items: center;
     padding: 1rem;
+
+    h3 {
+        margin-top: 1rem;
+    }
+
 `
 
 export const Icons = styled.div`
