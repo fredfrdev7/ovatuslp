@@ -96,28 +96,28 @@ function Home() {
                         </div>
                         <img src={fractionalloads} alt="" />
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto fuga labore saepe iure. Dolor eius et, rem ducimus, a numquam vel ullam quos est totam nostrum minus nemo molestias.</p>
+                    <p>Soluções ágeis, seguras e personalizadas para o transporte de cargas em todo o território nacional. Atendemos demandas pontuais e recorrentes, com compromisso com prazos e integridade da sua mercadoria.</p>
                     <div className="card">
                         <div className="cardtitle">
                             <h3>Operações dedicadas e contratos logísticos</h3>
                         </div>
                         <img src={operationsdedicated} alt="" />
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto fuga labore saepe iure. Dolor eius et, rem ducimus, a numquam vel ullam quos est totam nostrum minus nemo molestias.</p>
+                    <p>Gestão completa e personalizada da sua cadeia logística. Atuamos com equipes exclusivas, estrutura sob medida e foco em eficiência, reduzindo custos e aumentando a produtividade do seu negócio.</p>
                     <div className="card">
                         <div className="cardtitle">
                             <h3>Rastreamento em tempo real</h3>
                         </div>
                         <img src={realtimegps} alt="" />
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto fuga labore saepe iure. Dolor eius et, rem ducimus, a numquam vel ullam quos est totam nostrum minus nemo molestias.</p>
+                    <p>Acompanhe sua carga do início ao fim com total transparência. Nossa tecnologia oferece visibilidade completa em tempo real, garantindo mais segurança, controle e tranquilidade para o seu negócio.</p>
                     <div className="card">
                         <div className="cardtitle">
                             <h3>Armazenamento e distribuição(caso aplicável)</h3>
                         </div>
                         <img src={storage} alt="" />
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto fuga labore saepe iure. Dolor eius et, rem ducimus, a numquam vel ullam quos est totam nostrum minus nemo molestias.</p>
+                    <p>Infraestrutura segura e estratégica para armazenagem e distribuição eficiente de mercadorias. Integramos estoques com a malha de transporte para otimizar prazos, reduzir custos e garantir agilidade nas entregas.</p>
                 </Services>
                 <ClientsCases id="contactus">
                     <h1>Confiança que se transporta</h1>
