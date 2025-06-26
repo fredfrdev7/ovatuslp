@@ -19,7 +19,7 @@ export const navbarData = [
 		to: 'aboutus',
 	},
 	{
-		text: 'SERVIÇOS',
+		text: 'TRANSPORTES',
 		spy: true,
 		duration: 500,
 		smooth: true,
@@ -28,7 +28,7 @@ export const navbarData = [
 		to: 'services',
 	},
 	{
-		text: 'FALE CONOSCO',
+		text: 'CONTATO',
 		spy: true,
 		duration: 500,
 		smooth: true,

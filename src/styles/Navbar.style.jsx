@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
-	background: linear-gradient(90deg, #1a1a1a 35%, #3d3d3d 86.61%);
+	background: linear-gradient(90deg, #1a1a1a 35%, #1a1a1a 86.61%);
 	height: 110px;
 	display: flex;
 	position:sticky;
@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 	z-index: 50;
 	width: 100%;
     border-bottom: 1px solid;
-    border-image: linear-gradient(to left, #3d3d3d , #92c03e , #3d3d3d ) 1;
+    border-image: linear-gradient(to left, #1a1a1a , #92c03e , #1a1a1a ) 1;
 	border-left: 0;
 	border-right: 0;
 	border-top: 0;
@@ -35,31 +35,31 @@ export const NavLogo = styled(Link)`
 `;
 
 export const NavIcon = styled.img`
-	width: 4rem;
+	width: 10rem;
 
 	@media screen and (max-width: 1440px) and (min-width: 1240px) {
-		margin-right:37rem;
+		margin-right:23rem;
 	}
 	@media screen and (max-width: 1239px) and (min-width: 1024px) {
-		margin-right:16rem;
+		margin-right:12rem;
 	}
 	@media screen and (max-width: 1023px) and (min-width: 961px) {
-		margin-right:14rem;
+		margin-right:8rem;
 	}
 	@media screen and (max-width: 960px) and (min-width: 769px) {
-		margin-right:40rem;
+		margin-right:34rem;
 	}
 	@media screen and (max-width: 768px) and (min-width: 591px) {
-		margin-right:28rem;
+		margin-right:22rem;
 	}
 	@media screen and (max-width: 590px) and (min-width: 431px) {
-		margin-right:18rem;
+		margin-right:15rem;
 	}
 	@media screen and (max-width: 430px) and (min-width: 390px){
-		margin-right:17rem;
+		margin-right:12rem;
 	}
 	@media screen and (max-width: 389px) and (min-width: 320px){
-		margin-right:14rem;
+		margin-right:9rem;
 	}
 `;
 export const MobileIcon = styled.div`

@@ -10,7 +10,7 @@ function Navigation() {
                 <i onClick={() => { window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }); }}><GrUp /></i>
             </div>
             <div className='wpp_icon'> 
-                <a href="https://wa.me/5516992228343?text=Ol%C3%A1%20Rafael%2C%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20dos%20servi%C3%A7os.">
+                <a href="https://wa.me/5516997857120?text=Ol%C3%A1%20Ovatus%2C%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20dos%20servi%C3%A7os.">
                     <i><FaWhatsapp /></i>
                 </a>
             </div>

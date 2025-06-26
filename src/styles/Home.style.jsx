@@ -85,8 +85,7 @@ export const HeadlineCanvasTitle = styled.div`
 `
 
 export const HeadlineCanvasSubTitle = styled.div`
-    transform: translate(0px, -36px);
-    padding: 0 24rem;
+    padding: 0 16rem;
 
     p {
         font-size: 1.2rem;
@@ -100,24 +99,43 @@ export const HeadlineCanvasSubTitle = styled.div`
     }
 
     @media (max-width: 1023px) and (min-width: 884px) {
-        padding: 0rem 10rem;
+        padding: 0rem 8rem;
     }
 
-    @media (max-width: 883px) and (min-width: 625px) {
-        padding: 0rem 3rem; 
+    @media (max-width: 883px) and (min-width: 703px) {
+        padding: 0rem 2rem; 
     }
 
-    @media (max-width: 624px) and (min-width: 473px) {
-        padding: 0rem 2rem;  
+    @media (max-width: 702px) and (min-width: 320px) {
+        display: none;  
     }
 
-    @media (max-width: 472px) and (min-width: 375px) {
-        padding: 0rem 2rem;
-        transform: translate(0px, 10px);
+`
 
+export const HeadlineCanvasSubTitleResponsive = styled.div`
+    display: none;
+    position:relative;
+    z-index: 8;
 
+    p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.6rem;
+        
     }
 
+
+    @media (max-width: 702px) and (min-width: 546px) {
+        display: block;
+        padding: 0 3rem;
+        transform: translate(0px , -86px);
+    }
+
+    @media (max-width: 545px) and (min-width: 375px) {
+        display: block;
+        padding: 0 2rem;
+        transform: translate(0px , -26px);
+    }
 `
 
 export const CtaContent = styled.div`
@@ -125,6 +143,7 @@ export const CtaContent = styled.div`
     justify-content:center;
     align-items:center;
     background: #1a1a1a;
+    margin-top: 2rem;
 
 
    .box {
@@ -171,8 +190,24 @@ export const CtaContent = styled.div`
     cursor: pointer;
 }
 
-@media (max-width: 472px) and (min-width: 375px) {
-        margin-top: 2rem;
+@media (max-width: 704px) and (min-width: 623px) {
+        margin-top: 4rem;
+    }
+
+    @media (max-width: 622px) and (min-width: 546px) {
+        margin-top: 6rem;
+    }
+
+@media (max-width: 545px) and (min-width: 453px) {
+        margin-top: 12rem;
+    }
+
+    @media (max-width: 452px) and (min-width: 400px) {
+        margin-top: 14rem;
+    }
+
+    @media (max-width: 399px) and (min-width: 375px) {
+        margin-top: 16rem;
     }
     
 `
@@ -192,7 +227,7 @@ export const AboutSection = styled.div`
 `
 
 export const AboutUs = styled.div`
-    background: linear-gradient(180deg, #1a1a1a 45%, #3d3d3d 96.61%);
+    background: linear-gradient(180deg, #1a1a1a 45%, #1a1a1a 96.61%);
     color: #fff;
     overflow: hidden;
     position: relative;
@@ -234,7 +269,7 @@ export const AboutUs = styled.div`
     }
 
     p {
-        padding: 0 25rem;
+        padding: 0 23rem;
         font-weight: 300;
         font-size: 1.2rem;
         line-height: 1.6rem;
@@ -341,7 +376,7 @@ export const AboutUs = styled.div`
          .aboutinfo {
 
         p {
-        padding: 0 6rem;
+        padding: 0 3rem;
         
         }
 
@@ -397,13 +432,10 @@ export const Services = styled.div`
     display:flex;
     gap: 1rem;
     flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    background: linear-gradient(180deg, #3d3d3d 1% , #3b6e3d 6.61%);
+    background: linear-gradient(180deg, #1a1a1a 1% , #1a1a1a 6.61%);
     color: #fff;
-    text-align: center;
-    padding: 2rem 2rem 0rem 2rem;
-
+    padding: 2rem 0rem 0rem 0rem;
+    
 
     h1 {
         margin-top: 1rem;
@@ -419,35 +451,53 @@ export const Services = styled.div`
 
     .card {
         display:flex;
-        border-radius:1rem;
-        width: 80vw;
-        height: 300px;
+        height: 50vh;
+        margin-top: 2rem;
         
+    }
+
+    .card:nth-child(5) {
+        flex-direction: row-reverse;
+
+        img {
+            border-radius:2rem 0rem 0rem 2rem;
+        }
+
+        .cardtitle {
+            border-radius:2rem 0rem 0rem 0rem;
+        }
     }
 
     .card .cardtitle {
         position:absolute;
         background: linear-gradient(180deg, #3d3d3d 45%, rgba(0, 0, 0, 0.3) 96.61%);
-        padding: 1rem;
-        font-size: 1rem;
-        border-radius:2rem 2rem 0rem 0rem;;
-        width: 80vw;
+        padding: 1.6rem;
+        font-size: 1.2rem;
+        border-radius:0rem 2rem 0rem 0rem;
+        width: 50vw;
+        
        
     }
 
+   
     .card img {
-        width: 80vw;
+        width: 50vw;
         object-fit: cover;
-        border-radius:2rem;
+        border-radius:0rem 2rem 2rem 0rem;
     }
 
     p {
-        padding: 2rem 20rem;
+        font-size: 1.2rem;
+        padding: 2rem 6rem 2rem 4rem;
+        align-self: center;
+        text-align: start;
+        line-height: 1.6rem;
+        font-weight: 300;
     }
 
     @media (max-width: 1280px) and (min-width: 962px) {
         p {
-        padding: 2rem 16rem;
+        padding: 2rem 2rem;
     }  
     }
 
@@ -456,14 +506,36 @@ export const Services = styled.div`
 
         
         p {
-        padding: 2rem 12rem;
+        padding: 2rem 2rem;
     }  
     }
 
     @media (max-width: 764px) and (min-width: 432px) {
-       
+        .card {
+
+            height: 60vh;
+            flex-direction:column;
+        }
+
         p {
-        padding: 2rem 6rem;
+            font-size: 1rem;
+        padding: 2rem 2rem;
+        
+    }
+
+    .card .cardtitle {
+        width: 60vw;
+        padding: 1rem;
+    }
+
+   
+    .card img {
+        width: 60vw;
+    }
+
+    .card:nth-child(5) {
+       flex-wrap: wrap;
+
     }
 
     
@@ -471,8 +543,36 @@ export const Services = styled.div`
 
     @media (max-width: 431px) and (min-width: 375px) {
        
-        p {
+    .card {
+            flex-direction:column;
+            margin-bottom: 2rem;
+        }
+
+
+
+        .card .cardtitle {
+        width: 90vw;
         padding: 1rem;
+        font-size: 1rem;
+       
+    }
+
+   
+    .card img {
+        width: 90vw;
+    }
+
+    .card:nth-child(5) {
+       flex-wrap: wrap;
+
+    }
+
+
+        p {
+            line-height: 1.4rem;
+            font-size: 1rem;
+        padding: 1rem;
+        margin-top: 0.5rem;
     }
 
     
@@ -481,7 +581,7 @@ export const Services = styled.div`
 
 export const ClientsCases = styled.div`
     display:flex;
-    background: linear-gradient(180deg, #3b6e3d 1% , #1a1a1a 7.61%);
+    background: linear-gradient(180deg, #1a1a1a 1% , #1a1a1a 7.61%);
     gap: 1rem;
     flex-direction: column;
     justify-content:center;
