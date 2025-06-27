@@ -4,11 +4,11 @@ import { Link as LinkScroll } from 'react-scroll';
 
 export const Nav = styled.nav`
 	background: linear-gradient(90deg, #1a1a1a 35%, #1a1a1a 86.61%);
-	height: 110px;
+	height: 90px;
 	display: flex;
 	position:sticky;
-	justify-content: center;
 	align-items: center;
+	justify-content:center;
 	top: 0;
 	z-index: 50;
 	width: 100%;
@@ -21,7 +21,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
 	display: flex;
-	justify-content:end;
+	justify-content:space-between;
 	height: 80px;
 `;
 
@@ -36,21 +36,22 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled.img`
 	width: 10rem;
+	
 
 	@media screen and (max-width: 1440px) and (min-width: 1240px) {
 		margin-right:23rem;
 	}
-	@media screen and (max-width: 1239px) and (min-width: 1024px) {
+	@media screen and (max-width: 1239px) and (min-width: 1051px) {
 		margin-right:12rem;
 	}
-	@media screen and (max-width: 1023px) and (min-width: 961px) {
+	@media screen and (max-width: 1050px) and (min-width: 960px) {
 		margin-right:8rem;
 	}
-	@media screen and (max-width: 960px) and (min-width: 769px) {
-		margin-right:34rem;
+	@media screen and (max-width: 959px) and (min-width: 769px) {
+		margin-right:36rem;
 	}
 	@media screen and (max-width: 768px) and (min-width: 591px) {
-		margin-right:22rem;
+		margin-right:26rem;
 	}
 	@media screen and (max-width: 590px) and (min-width: 431px) {
 		margin-right:15rem;
@@ -71,7 +72,7 @@ export const MobileIcon = styled.div`
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: translate(-50%, 70%);
+		transform: translate(-50%, 50%);
 		font-size: 2.5rem;
 		cursor: pointer;
 	}
@@ -87,7 +88,7 @@ export const NavMenu = styled.ul`
 	@media screen and (max-width: 960px) {
 		flex-direction: column;
 		width: 100%;
-		height: 30rem;
+		height: 28rem;
 		position: absolute;
 		padding-top: 15%;
 		top: 0;
@@ -101,12 +102,12 @@ export const NavMenu = styled.ul`
 	}
 
 	@media screen and (max-width: 590px) {
-		height:28rem;
+		height:26rem;
 		padding-top: 20%;
 	}
 
 	@media screen and (max-width: 428px) {
-		height:28rem;
+		height:26rem;
 		padding-top: 25%;
 	}
 
@@ -116,8 +117,8 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-	height: 86px;
-	margin-left:3rem;
+	height: 56px;
+	margin-left:4rem;
 	cursor: pointer;
 	@media screen and (max-width: 960px) {
 		border-bottom: 0.1px solid ;
@@ -126,6 +127,7 @@ export const NavItem = styled.li`
 		border-right: 0;
 		border-top: 0;
 		margin-left:0rem;
+		height: 76px;
 		width: 100%;
 		&:hover {
 			border: none;

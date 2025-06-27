@@ -18,7 +18,7 @@ import logocontact from '../assets/logocontact.png'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HomeContainer, Headline, CanvasHeadline, HeadlineCanvasTitle, LineSection, HeadlineCanvasSubTitle, HeadlineCanvasSubTitleResponsive, CtaContent, AboutSection, AboutUs, Services, ClientsCases, Footer, Icons, CarouselContainer, Slider, ItemCarousel } from "../styles/Home.style";
+import { HomeContainer, Headline, CanvasHeadline, HeadlineCanvasTitle, HeadlineCanvasSubTitle, CtaContent, AboutSection, AboutUs, Services, ClientsCases, Footer, Icons, CarouselContainer, Slider, ItemCarousel } from "../styles/Home.style";
 
 function Home() {
 
@@ -35,23 +35,23 @@ function Home() {
                     <CanvasHeadline>
                         <HeadlineCanvasTitle>
                             <h1 data-aos="fade-down" data-aos-duration="1000">Ovatus Soluções Logísticas</h1>
-                            <h2 data-aos="fade-right" data-aos-duration="1300">Movidos pela inovação. Reconhecidos pela confiabilidade</h2>
+                            <h2 data-aos="fade-right" data-aos-duration="1300">Movidos pela inovação. <br /> Reconhecidos pela confiabilidade.</h2>
                         </HeadlineCanvasTitle>
-                        <Canvas camera={{ position: [400, 0, 0], fov: 1 }} style={{ pointerEvents: 'none' }}>
+                        {/* <Canvas camera={{ position: [400, 0, 0], fov: 1 }} style={{ pointerEvents: 'none' }}>
                             <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} autoRotate={true} autoRotateSpeed={6} />
                             <Suspense fallback={null}>
                                 <Logocanvas />
                             </Suspense>
                             <ambientLight intensity={-0.2} />
                             <Environment preset="city" />
-                        </Canvas>
+                        </Canvas> */}
                         <HeadlineCanvasSubTitle>
                             <p>Estamos constantemente buscando melhorias para tornar o transporte mais ágil e seguro. Com nossa experiência, oferecemos um excelente serviço ao cliente desde o primeiro contato. Nossa eficiência, comprometimento e agilidade são nossos pontos fortes.</p>
                         </HeadlineCanvasSubTitle>
                     </CanvasHeadline>
-                    <HeadlineCanvasSubTitleResponsive>
+                    {/* <HeadlineCanvasSubTitleResponsive>
                          <p>Estamos constantemente buscando melhorias para tornar o transporte mais ágil e seguro. Com nossa experiência, oferecemos um excelente serviço ao cliente desde o primeiro contato. Nossa eficiência, comprometimento e agilidade são nossos pontos fortes.</p>
-                    </HeadlineCanvasSubTitleResponsive>
+                    </HeadlineCanvasSubTitleResponsive> */}
                 </Headline>
                 <CtaContent>
                     <div className="box">

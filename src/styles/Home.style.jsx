@@ -44,6 +44,7 @@ export const CanvasHeadline = styled.div`
     top: 0;
     display:flex;
     flex-direction:column;
+    justify-content: space-between;
     z-index: 6;
     background: linear-gradient(360deg, #1a1a1a 20%, rgba(255, 255, 255, 0) 96.61%);
     background-repeat: no-repeat;
@@ -60,7 +61,7 @@ export const HeadlineCanvasTitle = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    transform: translate(0px, 36px);
+    transform: translate(0px, 20px);
     padding: 0 1rem;
 
     h1 {
@@ -69,13 +70,21 @@ export const HeadlineCanvasTitle = styled.div`
 
 
     h2 {
-        font-weight: 300;
+        font-weight: 500;
         font-size: 1.3rem;
+        line-height: 2rem;
     }
 
     @media (max-width: 472px) and (min-width: 375px) {
+        transform: translate(0px, 16px);
+        
         h1 { 
             font-size: 2rem;
+        }
+
+        h2 {
+        font-size: 1.2rem;
+        
         }
 
 
@@ -86,6 +95,7 @@ export const HeadlineCanvasTitle = styled.div`
 
 export const HeadlineCanvasSubTitle = styled.div`
     padding: 0 16rem;
+    transform: translate(0px, -46px);
 
     p {
         font-size: 1.2rem;
@@ -107,43 +117,44 @@ export const HeadlineCanvasSubTitle = styled.div`
     }
 
     @media (max-width: 702px) and (min-width: 320px) {
-        display: none;  
+         padding: 0rem 2rem; 
+         transform: translate(0px, 0px);
     }
 
 `
 
-export const HeadlineCanvasSubTitleResponsive = styled.div`
-    display: none;
-    position:relative;
-    z-index: 8;
+// export const HeadlineCanvasSubTitleResponsive = styled.div`
+//     display: none;
+//     position:relative;
+//     z-index: 8;
 
-    p {
-        font-size: 1.2rem;
-        font-weight: 300;
-        line-height: 1.6rem;
+//     p {
+//         font-size: 1.2rem;
+//         font-weight: 300;
+//         line-height: 1.6rem;
         
-    }
+//     }
 
 
-    @media (max-width: 702px) and (min-width: 546px) {
-        display: block;
-        padding: 0 3rem;
-        transform: translate(0px , -86px);
-    }
+//     @media (max-width: 702px) and (min-width: 546px) {
+//         display: block;
+//         padding: 0 3rem;
+//         transform: translate(0px , -86px);
+//     }
 
-    @media (max-width: 545px) and (min-width: 375px) {
-        display: block;
-        padding: 0 2rem;
-        transform: translate(0px , -26px);
-    }
-`
+//     @media (max-width: 545px) and (min-width: 375px) {
+//         display: block;
+//         padding: 0 2rem;
+//         transform: translate(0px , -26px);
+//     }
+// `
 
 export const CtaContent = styled.div`
     display: flex;
     justify-content:center;
     align-items:center;
     background: #1a1a1a;
-    margin-top: 2rem;
+    
 
 
    .box {
@@ -190,25 +201,25 @@ export const CtaContent = styled.div`
     cursor: pointer;
 }
 
-@media (max-width: 704px) and (min-width: 623px) {
-        margin-top: 4rem;
+@media (max-width: 704px) and (min-width: 320px) {
+        margin-top: 2rem;
     }
 
-    @media (max-width: 622px) and (min-width: 546px) {
-        margin-top: 6rem;
+    /* @media (max-width: 622px) and (min-width: 546px) {
+        margin-top: 2rem;
     }
 
 @media (max-width: 545px) and (min-width: 453px) {
-        margin-top: 12rem;
+        margin-top: 2rem;
     }
 
     @media (max-width: 452px) and (min-width: 400px) {
-        margin-top: 14rem;
+        margin-top: 2rem;
     }
 
     @media (max-width: 399px) and (min-width: 375px) {
-        margin-top: 16rem;
-    }
+        margin-top: 2rem;
+    } */
     
 `
 
@@ -647,7 +658,9 @@ export const ClientsCases = styled.div`
     }
 
     @media (max-width: 431px) and (min-width: 375px) {
-       
+       padding: 4rem 0rem 3rem 0rem;
+
+
         img {
         
         max-width: 280px;
